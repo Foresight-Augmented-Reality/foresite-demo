@@ -11,7 +11,23 @@
 		CD4A9C492D5A815C000B46AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4A9C482D5A815C000B46AB /* ContentView.swift */; };
 		CD4A9C4B2D5A815D000B46AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD4A9C4A2D5A815D000B46AB /* Assets.xcassets */; };
 		CD4A9C4E2D5A815D000B46AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD4A9C4D2D5A815D000B46AB /* Preview Assets.xcassets */; };
+		CDC1339B2D5A8692004EE398 /* Hear2ThereSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD4A9C542D5A81A3000B46AB /* Hear2ThereSDK.xcframework */; };
+		CDC1339C2D5A8692004EE398 /* Hear2ThereSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD4A9C542D5A81A3000B46AB /* Hear2ThereSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CDC1339D2D5A8692004EE398 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CDC1339C2D5A8692004EE398 /* Hear2ThereSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CD4A9C432D5A815C000B46AB /* Hear2ThereDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hear2ThereDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +35,7 @@
 		CD4A9C482D5A815C000B46AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD4A9C4A2D5A815D000B46AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD4A9C4D2D5A815D000B46AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD4A9C542D5A81A3000B46AB /* Hear2ThereSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Hear2ThereSDK.xcframework; path = ../../Hear2There/xcframeworks/Hear2ThereSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDC1339B2D5A8692004EE398 /* Hear2ThereSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +69,7 @@
 		CD4A9C452D5A815C000B46AB /* Hear2ThereDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				CD4A9C542D5A81A3000B46AB /* Hear2ThereSDK.xcframework */,
 				CD4A9C462D5A815C000B46AB /* Hear2ThereDemoAppApp.swift */,
 				CD4A9C482D5A815C000B46AB /* ContentView.swift */,
 				CD4A9C4A2D5A815D000B46AB /* Assets.xcassets */,
@@ -77,6 +96,7 @@
 				CD4A9C3F2D5A815C000B46AB /* Sources */,
 				CD4A9C402D5A815C000B46AB /* Frameworks */,
 				CD4A9C412D5A815C000B46AB /* Resources */,
+				CDC1339D2D5A8692004EE398 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,6 +217,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = YEs;
+				INFOPLIST_KEY_NSBluetoothWhileInUseUsageDescription = SDFLKJSDFLKJSDFLKJ;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -254,6 +276,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = Please;
+				INFOPLIST_KEY_NSBluetoothWhileInUseUsageDescription = SDKFJhsdfklj;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -272,6 +296,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hear2ThereDemoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = P3D6MYUY49;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -300,10 +325,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hear2ThereDemoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = P3D6MYUY49;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=*]" = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

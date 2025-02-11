@@ -27,4 +27,7 @@ Should Say Embed and Sign
 <img width="1512" alt="image" src="https://github.com/user-attachments/assets/724eba6f-ba99-46a0-92ef-c0eb3d4f95f2" />
 
 
+## Build and push to your phone
+If you encounter any issues please screenshot and grab any logs you can from the compiler
+
 
